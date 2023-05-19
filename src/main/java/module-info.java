@@ -6,4 +6,7 @@ module com.example.rpg_version_ihm {
 
     opens com.example.rpg_version_ihm to javafx.fxml;
     exports com.example.rpg_version_ihm;
+    exports modele;
+    exports vue;
+    exports controleur;
 }
