@@ -10,8 +10,6 @@ import java.io.File;
 
 public class ApplicationIHM extends Application {
 
-    private Parent root;
-
     public void start(Stage stage) {
         HBoxRoot root = new HBoxRoot();
         Scene scene = new Scene(root, 700, 400);
