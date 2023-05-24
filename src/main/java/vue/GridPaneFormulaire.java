@@ -15,7 +15,7 @@ public class GridPaneFormulaire extends GridPane implements Constantes_IHM {
     ComboBox<String> comboBoxChoisDuScenario;
 
     public GridPaneFormulaire() {
-        this.setHgap(20);
+        this.setHgap(10);
         this.setVgap(20);
 
         Label labelTitle = new Label("Veuillez paramétrer votre simulation !");

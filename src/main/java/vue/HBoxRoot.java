@@ -2,15 +2,21 @@ package vue;
 
 import controleur.Controleur;
 import javafx.scene.layout.HBox;
+import modele.LectureFichierTexte;
+import modele.NiveauUNParametre;
+
+import java.io.File;
 
 public class HBoxRoot extends HBox {
 
     static Controleur controleur;
     static GridPaneFormulaire formulaire;
+    static NiveauUNParametre realisationScenario;
 
     public HBoxRoot() {
         controleur = new Controleur();
         formulaire = new GridPaneFormulaire();
+        realisationScenario = new NiveauUNParametre(LectureFichierTexte.lecture(new File("scenarios"+File.separator+"scenario_0.txt")));
 
         this.getChildren().add(formulaire);
     }
@@ -31,4 +37,5 @@ public class HBoxRoot extends HBox {
     public static Controleur getControleur() {
         return controleur;
     }
+
 }

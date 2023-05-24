@@ -2,7 +2,6 @@ package controleur;
 
 import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import vue.GridPaneFormulaire;
 import vue.HBoxRoot;
