@@ -83,4 +83,15 @@ public class GridPaneFormulaire extends GridPane implements Constantes_IHM {
         return new File("scenarios" + File.separator + nomfichier);
     }
 
+    /**
+     * Méthode getNumScenarioSelectionne
+     *
+     * Cette méthode renvoi le numéro du scenario séléctionné.
+     * Cette méthode sera utilisée pour mettre à jour les labels pour l'affichage des solutions.
+     * @return int
+     */
+    public int getNumScenarioSelectionne() {
+        return comboBoxChoisDuScenario.getSelectionModel().getSelectedIndex();
+    }
+
 }
