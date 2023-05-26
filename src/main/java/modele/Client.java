@@ -19,7 +19,7 @@ public class Client {
 
 
         System.out.println("\ntest affichage 3");
-        System.out.println(new NiveauUNParametre(scenario0));
+        System.out.println(new NiveauUNParametre(scenario0, 0, 0));
 
 
 
@@ -30,19 +30,10 @@ public class Client {
 
 
         System.out.println("\ntest affichage 7");
-        NiveauUNParametre niveauUNTest = new NiveauUNParametre(scenario0);
+        NiveauUNParametre niveauUNTest = new NiveauUNParametre(scenario0, 0, 0);
         System.out.println(niveauUNTest.solutionEfficace());
         System.out.println(niveauUNTest.solutionExhaustive());
-/*
-        System.out.println("\ntest perso");
-        ArrayList<Quete> test = scenario0.getChQuetes();
-        Quete quete = test.get(0);
-        quete.chNumero = 2;
-        System.out.println(quete);
-        System.out.println(test.get(0));
-*/
-        System.out.println("\n");
-        System.out.println(new Quete("3|(1, 0)|()|7|100|dialoguer avec Morrigan la déesse de la mort").nbPreconditions());
+
 
     }
 }

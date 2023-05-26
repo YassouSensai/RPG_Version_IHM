@@ -13,6 +13,8 @@ import java.io.File;
 public class GridPaneFormulaire extends GridPane implements Constantes_IHM {
 
     ComboBox<String> comboBoxChoisDuScenario;
+    TextField textFieldPositionX;
+    TextField textFieldPositionY;
 
     public GridPaneFormulaire() {
         this.setHgap(10);
@@ -31,8 +33,8 @@ public class GridPaneFormulaire extends GridPane implements Constantes_IHM {
         Label labelCoordonnee = new Label("Choix des coordonnées :");
         Label labelX = new Label("x :");
         Label labelY = new Label("y :");
-        TextField textFieldPositionX = new TextField();
-        TextField textFieldPositionY = new TextField();
+        textFieldPositionX = new TextField("0");
+        textFieldPositionY = new TextField("0");
 
 
         this.add(labelCoordonnee, 2, 4);
@@ -43,10 +45,11 @@ public class GridPaneFormulaire extends GridPane implements Constantes_IHM {
         this.add(textFieldPositionY, 4, 5);
 
 
-        Button bouttonSimuler = new Button("Simuler");
-        bouttonSimuler.addEventHandler(ActionEvent.ACTION, HBoxRoot.getControleur());
+        Button boutonSimuler = new Button("Simuler");
+        boutonSimuler.setUserData("Simuler");
+        boutonSimuler.addEventHandler(ActionEvent.ACTION, HBoxRoot.getControleur());
 
-        this.add(bouttonSimuler, 2, 6);
+        this.add(boutonSimuler, 2, 6);
 
 
 
@@ -92,6 +95,14 @@ public class GridPaneFormulaire extends GridPane implements Constantes_IHM {
      */
     public int getNumScenarioSelectionne() {
         return comboBoxChoisDuScenario.getSelectionModel().getSelectedIndex();
+    }
+
+    public int getPosX() {
+        return Integer.parseInt(textFieldPositionX.getText());
+    }
+
+    public int getPosY() {
+        return Integer.parseInt(textFieldPositionY.getText());
     }
 
 }

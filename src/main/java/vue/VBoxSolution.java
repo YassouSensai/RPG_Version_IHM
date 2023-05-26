@@ -1,9 +1,8 @@
 package vue;
 
 
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 import modele.Position;
@@ -40,14 +39,23 @@ public class VBoxSolution extends VBox {
         tableDesQuetes.getColumns().add(intituleColums);
         tableDesQuetes.getColumns().add(positionColum);
 
-
+        Button boutonDetail = new Button("Afficher les détails");
+        boutonDetail.setUserData(efficace_ou_exhaustive);
+        boutonDetail.addEventHandler(ActionEvent.ACTION, HBoxRoot.getControleur());
 
 
         this.getChildren().add(labelSolution);
         this.getChildren().add(tableDesQuetes);
+        this.getChildren().add(boutonDetail);
     }
 
 
+    /**
+     * Méthode miseAJourTable.
+     *
+     * Cette méthode permet de mettre à jour la tableDesQuetes lorsque l'utilisateur appuis sur le bouton simuler.
+     * @param solutionEfficaceEnCour
+     */
     public void miseAJourTable(ArrayList<Quete> solutionEfficaceEnCour) {
         tableDesQuetes.getItems().clear();
 
@@ -66,6 +74,7 @@ public class VBoxSolution extends VBox {
     }
 
 
+
     /**
      * Muttateur sur le champ labelSolution.
      * @param numScenario
@@ -78,8 +87,9 @@ public class VBoxSolution extends VBox {
         else {
             labelSolution.setText("Solution exhaustive du scenario "+numScenario+". ");
         }
-
     }
+
+
 
 
 }

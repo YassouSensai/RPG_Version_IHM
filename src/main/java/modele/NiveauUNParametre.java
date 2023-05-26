@@ -9,19 +9,21 @@ public class NiveauUNParametre {
     int experienceAccumulee = 0;
     int experienceNecessaireQueteFinale;
     ArrayList<Integer> quetesRealisee = new ArrayList<>();
-    Position positionDepart = new Position(0,0);
+    Position positionDepart;
     int dureeAccumulee = 0;
+    String solutionString;
 
     /**
      * Constructeur de la classe NiveauUN a partir d'un scenario
      *
      * @param parScenario
      */
-    public NiveauUNParametre(Scenario parScenario) {
+    public NiveauUNParametre(Scenario parScenario, int x, int y) {
         scenarioEnCour = parScenario;
         queteFinale = parScenario.queteFinale();
         experienceNecessaireQueteFinale = parScenario.queteFinale().getChExperience();
         quetesScenario = parScenario.getListeQuetes();
+        positionDepart = new Position(x,y);
     }
 
     /**
@@ -39,6 +41,7 @@ public class NiveauUNParametre {
         dureeAccumulee = 0;
         experienceAccumulee = 0;
         positionDepart = new Position(0,0);
+        solutionString = "";
     }
 
     /**
@@ -233,7 +236,6 @@ public class NiveauUNParametre {
 
         miseAJour();
         ArrayList<Quete> solution = new ArrayList<>();
-        String solutionString = "";
 
         while (!queteFinale.estRealisee()) {
             Quete queteARealiser = queteLaPlusProche_Efficace();
@@ -244,7 +246,7 @@ public class NiveauUNParametre {
                 solutionString = realisonLaQuete(queteARealiser, solution, solutionString);
         }
 
-        System.out.println(solutionString += "\n\nRapport : duree totale = " + dureeAccumulee + " et experience totale = " + experienceAccumulee + " et nombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size());
+        solutionString += "\n\nRapport : duree totale = " + dureeAccumulee + " et experience totale = " + experienceAccumulee + " et nombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size();
         return solution;
 
     }
@@ -259,7 +261,6 @@ public class NiveauUNParametre {
 
         miseAJour();
         ArrayList<Quete> solution = new ArrayList<>();
-        String solutionString = "";
 
         while (!scenarioFini()) {
             solutionString = realisonLaQuete(queteLaPlusProche_Exhaustive(), solution, solutionString);
@@ -269,8 +270,16 @@ public class NiveauUNParametre {
         else
             System.out.println("Toutes les quêtes préalables ont ete realisee - Impossible de proposer une solution exhaustive ");
 
-        System.out.println(solutionString += "\n\nRapport : duree totale = " + dureeAccumulee + " et experience totale = " + experienceAccumulee + " et nombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size());
+        solutionString += "\n\nRapport : duree totale = " + dureeAccumulee + " et experience totale = " + experienceAccumulee + " et nombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size();
         return solution;
+    }
+
+    /**
+     * Accesseur sur le champ solutionString.
+     * @return String
+     */
+    public String getSolutionString() {
+        return solutionString;
     }
 
     /**
