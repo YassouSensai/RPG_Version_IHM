@@ -9,12 +9,9 @@ import javafx.stage.Stage;
 import java.io.File;
 
 public class ApplicationIHM extends Application {
-
-    private Parent root;
-
     public void start(Stage stage) {
         HBoxRoot root = new HBoxRoot();
-        Scene scene = new Scene(root, 700, 400);
+        Scene scene = new Scene(root, 1400, 400);
         File feuilleCSS = new File("css"+File.separator+"feuilleStyle.css");
 
         scene.getStylesheets().add(feuilleCSS.toURI().toString());
