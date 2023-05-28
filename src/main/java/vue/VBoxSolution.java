@@ -18,6 +18,7 @@ public class VBoxSolution extends VBox {
 
     public VBoxSolution(String par_eff_ou_exh) {
         efficace_ou_exhaustive = par_eff_ou_exh;
+
         if (efficace_ou_exhaustive == "eff") {
             labelSolution = new Label("Solution efficace du scenario ");
         }
@@ -88,8 +89,6 @@ public class VBoxSolution extends VBox {
             labelSolution.setText("Solution exhaustive du scenario "+numScenario+". ");
         }
     }
-
-
 
 
 }

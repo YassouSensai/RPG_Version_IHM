@@ -1,0 +1,16 @@
+.root {
+    -fx-background-color: #C3ECB2;
+    -fx-padding: 40px;
+}
+
+.label {
+    -fx-text-fill: #665F54;
+}
+
+.button, .combo-box {
+    -fx-background-color: #B4E8F5;
+}
+
+.button:hover, .combo-box:hover {
+    -fx-background-color: #E6EDA6;
+}
