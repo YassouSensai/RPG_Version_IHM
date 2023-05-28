@@ -18,15 +18,13 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class Controleur implements EventHandler {
-
+    String solutionStringEfficace = null;
+    String solutionStringExhaustive = null;
     @Override
     public void handle(Event event) {
         GridPaneFormulaire formulaire = HBoxRoot.getFormulaire();
         VBoxSolution tableEfficace = HBoxRoot.getTableEfficace();
         VBoxSolution tableExhaustive = HBoxRoot.getTableExhaustive();
-
-        String solutionStringEfficace = null;
-        String solutioNStringExhaustive = null;
 
 
         if (((Button) event.getSource()).getUserData() == "Simuler") {
@@ -48,11 +46,8 @@ public class Controleur implements EventHandler {
 
             ArrayList<Quete> solutionExhaustiveEnCour = scenarioEnCour.solutionExhaustive();
             tableExhaustive.miseAJourTable(solutionExhaustiveEnCour);
-            solutioNStringExhaustive = scenarioEnCour.getSolutionString();
+            solutionStringExhaustive = scenarioEnCour.getSolutionString();
         }
-
-
-
 
         if (((Button) event.getSource()).getUserData() == "eff") {
             SceneDetailSolution afficheDetailEfficace = new SceneDetailSolution(solutionStringEfficace);
@@ -60,7 +55,7 @@ public class Controleur implements EventHandler {
         }
 
         if (((Button) event.getSource()).getUserData() == "exh") {
-            SceneDetailSolution afficheDetailExhaustive = new SceneDetailSolution(solutioNStringExhaustive);
+            SceneDetailSolution afficheDetailExhaustive = new SceneDetailSolution(solutionStringExhaustive);
             afficheDetailExhaustive.start(new Stage());
         }
 

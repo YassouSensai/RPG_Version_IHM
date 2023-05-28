@@ -14,7 +14,7 @@ public class SceneDetailSolution extends Application {
         root.getChildren().add(solutionText);
     }
     public void start(Stage stage) {
-        Scene scene = new Scene(root, 400, 250);
+        Scene scene = new Scene(root, 300, 600);
 
         stage.setScene(scene);
         stage.setTitle("Details de la solution");

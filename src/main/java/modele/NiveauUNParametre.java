@@ -11,7 +11,7 @@ public class NiveauUNParametre {
     ArrayList<Integer> quetesRealisee = new ArrayList<>();
     Position positionDepart;
     int dureeAccumulee = 0;
-    String solutionString;
+    String solutionString = "DEPLACEMENTS\n";
 
     /**
      * Constructeur de la classe NiveauUN a partir d'un scenario
@@ -41,7 +41,7 @@ public class NiveauUNParametre {
         dureeAccumulee = 0;
         experienceAccumulee = 0;
         positionDepart = new Position(0,0);
-        solutionString = "";
+        solutionString = "DEPLACEMENTS\n";
     }
 
     /**
@@ -232,8 +232,6 @@ public class NiveauUNParametre {
      * @return ArrayList<Quete>
      */
     public ArrayList<Quete> solutionEfficace() {
-        System.out.println("\n\nSolution efficace 'glouton' pour le scenario ! " );
-
         miseAJour();
         ArrayList<Quete> solution = new ArrayList<>();
 
@@ -246,7 +244,7 @@ public class NiveauUNParametre {
                 solutionString = realisonLaQuete(queteARealiser, solution, solutionString);
         }
 
-        solutionString += "\n\nRapport : duree totale = " + dureeAccumulee + " et experience totale = " + experienceAccumulee + " et nombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size();
+        solutionString += "\n\nRAPPORT :\nDuree totale = " + dureeAccumulee + "\nexperience totale = " + experienceAccumulee + "\nNombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size();
         return solution;
 
     }
@@ -257,8 +255,6 @@ public class NiveauUNParametre {
      * @return ArrayList<Quete>
      */
     public ArrayList<Quete> solutionExhaustive() {
-        System.out.println("\n\nSolution exhaustive 'glouton' pour le scenario ! " );
-
         miseAJour();
         ArrayList<Quete> solution = new ArrayList<>();
 
@@ -270,7 +266,7 @@ public class NiveauUNParametre {
         else
             System.out.println("Toutes les quêtes préalables ont ete realisee - Impossible de proposer une solution exhaustive ");
 
-        solutionString += "\n\nRapport : duree totale = " + dureeAccumulee + " et experience totale = " + experienceAccumulee + " et nombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size();
+        solutionString += "\n\nRAPPORT :\nDuree totale = " + dureeAccumulee + "\nexperience totale = " + experienceAccumulee + "\nNombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size();
         return solution;
     }
 
