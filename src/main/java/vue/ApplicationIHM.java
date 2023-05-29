@@ -10,8 +10,8 @@ import java.io.File;
 public class ApplicationIHM extends Application {
     public void start(Stage stage) {
         HBoxRoot root = new HBoxRoot();
-        Scene scene = new Scene(root, 1400, 400);
-        File feuilleCSS = new File("css"+File.separator+"feuilleStyle.css");
+        Scene scene = new Scene(root, 1050, 400);
+        File feuilleCSS = new File("css"+File.separator+"application.css");
 
         scene.getStylesheets().add(feuilleCSS.toURI().toString());
 
