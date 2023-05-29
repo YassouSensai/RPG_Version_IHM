@@ -9,4 +9,5 @@ module com.example.rpg_version_ihm {
     exports modele;
     exports vue;
     exports controleur;
+    exports constantes;
 }

@@ -8,13 +8,12 @@ import javafx.stage.Stage;
 import java.io.File;
 
 public class ApplicationIHM extends Application {
+    HBoxRoot root = new HBoxRoot();
     public void start(Stage stage) {
-        HBoxRoot root = new HBoxRoot();
         Scene scene = new Scene(root, 1050, 400);
         File feuilleCSS = new File("css"+File.separator+"application.css");
 
         scene.getStylesheets().add(feuilleCSS.toURI().toString());
-
 
         stage.setScene(scene);
         stage.setTitle("Role Playing Game");

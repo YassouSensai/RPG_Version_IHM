@@ -2,6 +2,16 @@ package modele;
 
 import static java.lang.Math.abs;
 
+/**
+ * Classe Position.
+ *
+ * Cette classe permet d'instancier des position, c'est à dire des objets
+ * avec des champs x et y qui correspondent aux coordonnées d'une quete.
+ *
+ * Cette methode contient les champs suivants :
+ *  - int x,y   (coordonnee (abscisse et ordonnee)
+ *
+ */
 public class Position {
     int x, y;
 
@@ -18,24 +28,22 @@ public class Position {
     }
 
     /**
-     * Cette methode est un accesseur, elle retourne le champ x.
-     *
+     * Accesseur sur le champ x.
      * @return int
      */
     public int getX() {return x;}
 
     /**
-     * Cette methode est un accesseur, elle retourne le champ y.
-     *
+     * Accesseur sur le champ y.
      * @return int
      */
     public int getY() {return y;}
 
     /**
+     * Methode deplacement.
+     *
      * La methode deplacement() renvoi le nombre d'unite de temps que necessite
      * le deplacement de la position appelante a la position en parametre.
-     *
-     * (Cette methode est utilisée dans le niveau 1)
      *
      * @param parPosition
      * @return int
@@ -44,6 +52,10 @@ public class Position {
         return abs(this.x - parPosition.getX()) + abs(this.y - parPosition.getY());
     }
 
+    /**
+     * Methode toString de la classe Position.
+     * @return String
+     */
     public String toString() {
         return "(" + x + "," + y + ")";
     }

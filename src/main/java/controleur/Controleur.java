@@ -50,13 +50,19 @@ public class Controleur implements EventHandler {
         }
 
         if (((Button) event.getSource()).getUserData() == "eff") {
-            SceneDetailSolution afficheDetailEfficace = new SceneDetailSolution(solutionStringEfficace);
-            afficheDetailEfficace.start(new Stage());
+            if (tableEfficace.tableDesQuetes.getItems().size() != 0) {
+                SceneDetailSolution afficheDetailEfficace = new SceneDetailSolution(solutionStringEfficace);
+                afficheDetailEfficace.start(new Stage());
+            }
+
         }
 
         if (((Button) event.getSource()).getUserData() == "exh") {
-            SceneDetailSolution afficheDetailExhaustive = new SceneDetailSolution(solutionStringExhaustive);
-            afficheDetailExhaustive.start(new Stage());
+            if (tableExhaustive.tableDesQuetes.getItems().size() != 0) {
+                SceneDetailSolution afficheDetailExhaustive = new SceneDetailSolution(solutionStringExhaustive);
+                afficheDetailExhaustive.start(new Stage());
+            }
+
         }
 
     }

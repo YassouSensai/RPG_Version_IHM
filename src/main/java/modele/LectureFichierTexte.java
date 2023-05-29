@@ -4,8 +4,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class LectureFichierTexte {
 
+/**
+ * Classe LectureFichierTexte.
+ *
+ * Cette classe permet de lire et de transformer en scenario
+ * les fichiers textes contenants les quêtes (ces fichiers se trouvent dans le repertoire scenarios).
+ */
+public class LectureFichierTexte {
 
     /**
      * Methode lecture ce la classe LectureFichierTexte.

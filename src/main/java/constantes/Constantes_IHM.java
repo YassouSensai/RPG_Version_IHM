@@ -1,4 +1,4 @@
-package modele;
+package constantes;
 
 public interface Constantes_IHM {
     public final String[] LISTE_SCENARIOS = new String[]{"scenario 0", "scenario 1", "scenario 2", "scenario 3", "scenario 4",

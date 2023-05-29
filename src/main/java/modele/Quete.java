@@ -5,6 +5,19 @@ import java.util.Scanner;
 
 import static java.lang.Math.abs;
 
+
+/**
+ * classe Quete.
+ *
+ * Cette classe pemet d'instancier des quetes qui constituront les scenarios.
+ *
+ * Cette classe contient les champs suivants :
+ *  - int chNumero,chDuree,chExperience         (le numero de quete, la duree necessaire et l'experience qu'elle apporte)
+ *  - int precond1,precond2,precond3,precond4   (les preconditions d'une quete)
+ *  - Position chPosition                       (la position d'une quete)
+ *  - String chIntitule                         (l'intitule d'une quete)
+ *  - boolean chRealisee                        (permet de dire si une quete est realisee ou non (vaut initialement false)
+ */
 public class Quete {
 
     //
@@ -12,7 +25,6 @@ public class Quete {
     int chNumero,chDuree,chExperience;
     int precond1,precond2,precond3,precond4;
     Position chPosition;
-    int [][] chPreconditions = new int [2][2];
     String chIntitule;
     boolean chRealisee = false;
 
@@ -63,11 +75,6 @@ public class Quete {
             precond3 = preconditions[2];
             precond4 = preconditions[3];
 
-            chPreconditions[0][0] = precond1;
-            chPreconditions[0][1] = precond2;
-            chPreconditions[1][0] = precond3;
-            chPreconditions[1][1] = precond4;
-
             this.chDuree = scanner.nextInt();
             this.chExperience = scanner.nextInt();
             this.chIntitule = scanner.next();
@@ -75,8 +82,7 @@ public class Quete {
     }
 
     /**
-     * Cette methode est un accesseur, elle retourne le numero de la quete appelante.
-     *
+     * Accesseur sur le champ chNumero.
      * @return chNumero
      */
     public int getChNumero() {
@@ -85,8 +91,7 @@ public class Quete {
 
 
     /**
-     * Cette methode est un accesseur, elle retourne la duree de la quete appelante.
-     *
+     * Accesseur sur le champ chDuree.
      * @return chDuree
      */
     public int getChDuree() {
@@ -94,9 +99,7 @@ public class Quete {
     }
 
     /**
-     * Cette methode est un accesseur, elle retourne l'experience qu'apporte la quete appelante
-     * (ou bien l'experience necessaire si c'est la quete finale qui appelle cette méthode).
-     *
+     * Accesseur sur le champ chExperience.
      * @return chExperience
      */
     public int getChExperience() {
@@ -104,21 +107,13 @@ public class Quete {
     }
 
     /**
-     * Cette methode retourne l'intitule de la quete appelante.
+     * Accesseur sur le champ chIntitule
      * @return chIntitule
      */
     public String getChIntitule() {
         return chIntitule;
     }
 
-    /**
-     * Cette methode est un accesseur, elle retourne les preconditions de la quete appelante.
-     *
-     * @return chPrecondition
-     */
-    public int[][] getChPreconditions() {
-        return chPreconditions;
-    }
 
     /**
      * Cette methode est un accesseur, elle retourne la position de la quete appelante.
