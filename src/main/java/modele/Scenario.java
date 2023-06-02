@@ -2,6 +2,14 @@ package modele;
 
 import java.util.ArrayList;
 
+/**
+ * Classe Scenario
+ *
+ *  Cette classe permet de créer un scenario, notemment a partir de la lecture d'un scenario
+ *  au format txt grâce a la classe LectureFichierTexte. Cette classe contient 1 champ ;
+ *
+ *  - ArrayList<Quete> listeQuetes      liste des quetes, ce qui constitue le scenario
+ */
 public class Scenario {
     ArrayList<Quete> listeQuetes;
 

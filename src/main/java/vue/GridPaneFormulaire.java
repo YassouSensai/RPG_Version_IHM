@@ -10,49 +10,62 @@ import constantes.Constantes_IHM;
 
 import java.io.File;
 
+
+/**
+ * Classe GridPaneFormulaire.
+ *
+ * Cette classe herite de la classe GridPane et implemente l'interface Constantes_IHM. Elle permet
+ * d'instancier des objets de la classe GridPane et qui permettrons de parametrer les solutions.
+ *
+ * Cette classe contient 3 champs ;
+ *  - ComboBox<String> comboBoxChoisDuScenario              pour le choix du scenario
+ *  - TextField textFieldPositionX, textFieldPositionY      pour le choix de la position de depart
+ */
 public class GridPaneFormulaire extends GridPane implements Constantes_IHM {
 
     ComboBox<String> comboBoxChoisDuScenario;
-    TextField textFieldPositionX;
-    TextField textFieldPositionY;
+    TextField textFieldPositionX, textFieldPositionY;
 
+
+    /**
+     * Constructeur de la classe GridPaneFormulaire.
+     */
     public GridPaneFormulaire() {
+
+        // Parametrage de l'espacement entre les elements
         this.setHgap(10);
         this.setVgap(20);
 
+        // Instanciation + ajout du titre
         Label labelTitle = new Label("Veuillez paramétrer votre simulation !");
         this.add(labelTitle, 2, 1, 5, 1);
 
+        // Instanciation + ajout du champ comboBoxChoixDuScenario
         Label labelCombo = new Label("Choix du scenario : ");
         comboBoxChoisDuScenario = peupleComboBox(LISTE_SCENARIOS);
         comboBoxChoisDuScenario.setValue("scenario 0");
-
         this.add(labelCombo, 2, 3);
         this.add(comboBoxChoisDuScenario, 3, 3);
 
+        // Instanciation des labels pour les coordonnées + des champs textFieldPositionX et textFieldPositionY
         Label labelCoordonnee = new Label("Choix des coordonnées :");
         Label labelX = new Label("x :");
         Label labelY = new Label("y :");
         textFieldPositionX = new TextField("0");
         textFieldPositionY = new TextField("0");
 
-
+        // Ajout des labels pour les coordonnées + des champs textFieldPositionX et textFieldPositionY
         this.add(labelCoordonnee, 2, 4);
         this.add(labelX, 3, 4);
         this.add(textFieldPositionX, 4, 4);
-
         this.add(labelY, 3, 5);
         this.add(textFieldPositionY, 4, 5);
 
-
+        // Instanciation + ajout du bouton pour la simulation des solutions
         Button boutonSimuler = new Button("Simuler");
         boutonSimuler.setUserData("Simuler");
         boutonSimuler.addEventHandler(ActionEvent.ACTION, HBoxRoot.getControleur());
-
         this.add(boutonSimuler, 2, 6);
-
-
-
 
     }
 
@@ -97,10 +110,18 @@ public class GridPaneFormulaire extends GridPane implements Constantes_IHM {
         return comboBoxChoisDuScenario.getSelectionModel().getSelectedIndex();
     }
 
+    /**
+     * Methode qui permet de reccuperer ce qui a ete inséré dans le champ textFieldPositionX
+     * @return int
+     */
     public int getPosX() {
         return Integer.parseInt(textFieldPositionX.getText());
     }
 
+    /**
+     * Methode qui permet de reccuperer ce qui a ete inséré dans le champ textFieldPositionY
+     * @return int
+     */
     public int getPosY() {
         return Integer.parseInt(textFieldPositionY.getText());
     }
