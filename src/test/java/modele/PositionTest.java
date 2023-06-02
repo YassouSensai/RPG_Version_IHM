@@ -21,5 +21,30 @@ class PositionTest {
             }
         }
     }
+
+    @Test
+    void getX() {
+        System.out.println("Test de la methode getX");
+
+        Position[] tabPositions = {new Position(0, 0), new Position(5, 5), new Position(3, 1)};
+        int[] tabReponses = {0, 5, 3};
+
+        for (int i = 0; i < tabPositions.length; i++) {
+            assertEquals(tabReponses[i], tabPositions[i].getX());
+        }
+
+    }
+
+    @Test
+    void getY() {
+        System.out.println("Test de la methode getY");
+
+        Position[] tabPositions = {new Position(0, 0), new Position(5, 5), new Position(3, 1)};
+        int[] tabReponses = {0, 5, 1};
+
+        for (int i = 0; i < tabPositions.length; i++) {
+            assertEquals(tabReponses[i], tabPositions[i].getY());
+        }
+    }
 }
 
