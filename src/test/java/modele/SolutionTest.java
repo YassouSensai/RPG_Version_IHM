@@ -1,14 +1,9 @@
 package modele;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
-import java.util.ArrayList;
 
-
-class NiveauUNParametreTest {
+class SolutionTest {
 
     @Test
     void solutionEfficace() {

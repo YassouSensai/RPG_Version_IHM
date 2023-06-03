@@ -3,7 +3,7 @@ package modele;
 import java.util.ArrayList;
 
 /**
- * Classe NiveauUNParametre.
+ * Classe Solution.
  *
  * Cette classe contient les deux algorithmes permettant d'avoir une solution efficace et
  * exhaustive pour un scenario qui sera donné en parametre du constructeur de la classe.
@@ -20,7 +20,7 @@ import java.util.ArrayList;
  *  - String solutionString                 (details des solutions efficaces et exhaustive)
  *
  */
-public class NiveauUNParametre {
+public class Solution {
     ArrayList<Quete> quetesScenario;
     Quete queteFinale;
     int experienceAccumulee = 0;
@@ -32,11 +32,14 @@ public class NiveauUNParametre {
     String solutionString = "\nDEPLACEMENTS\n";
 
     /**
-     * Constructeur de la classe NiveauUNParametre.
+     * Constructeur de la classe Solution.
+     * Il reçoit en parametre un scenario ainsi que les coordonnee de depart.
      *
      * @param parScenario
+     * @param parX
+     * @param parY
      */
-    public NiveauUNParametre(Scenario parScenario, int parX, int parY) {
+    public Solution(Scenario parScenario, int parX, int parY) {
         queteFinale = parScenario.queteFinale();
         experienceNecessaireQueteFinale = parScenario.queteFinale().getChExperience();
         quetesScenario = parScenario.getListeQuetes();
