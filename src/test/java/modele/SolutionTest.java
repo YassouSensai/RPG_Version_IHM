@@ -9,6 +9,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
+/**
+ * Classe solutionTest.
+ *
+ * Cette classe contient des methode de test pour certaines methodes de la classe Solution.
+ *  - solutionEfficace()
+ *  - solutionExhaustive()
+ */
 class SolutionTest {
 
 

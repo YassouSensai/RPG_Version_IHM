@@ -1,14 +1,20 @@
 package modele;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Classe Positiontest.
+ *
+ * cette classe contient des methodes de test pour certaines methodes de la classe Position.
+ *  - deplacement()
+ *  - getX()
+ *  - getY()
+ */
 class PositionTest {
-
     @Test
     void deplacement() {
-        System.out.println("Test de la méthode déplacement");
+        System.out.println("Test de la méthode deplacement");
 
         Position[] tabPositions = {new Position(0, 0), new Position(5, 5), new Position(3, 1)};
         int[] tabReponses = {0, 10, 4, 10, 0, 6, 4, 6, 0};

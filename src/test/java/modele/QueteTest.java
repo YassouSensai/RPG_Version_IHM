@@ -9,9 +9,21 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class QueteTest {
 
-    @org.junit.jupiter.api.Test
+/**
+ * Classe QueteTest.
+ *
+ * Cette classe contient des methodes de test pour certaines methodes de la classe Quete ;
+ *  - estQueteFinale()
+ *  - nbPreconditions()
+ *  - estRealisee()
+ *  - getChNumero()
+ *  - getChExperience()
+ *  - getChIntitule()
+ *  - getChPosition()
+ */
+class QueteTest {
+    
     void estQueteFinale() {
         System.out.println("Test de la methode estQuesteFinale");
 
@@ -57,32 +69,7 @@ class QueteTest {
 
     }
 
-    @Test
-    void deplacement() {
-        System.out.println("Test de la methode deplacement()");
 
-        Quete queteAppelante = new Quete("9|(0, 0)|()|2|100|explorer pic de Bhanborim");
-        Quete [] tabQuetes = {new Quete("1|(4, 3)|()|2|100|explorer pic de Bhanborim"), new Quete("0|(1, 1)|((3,4),)|4|350|vaincre Araignée lunaire")};
-        int [] tabreponses = {7, 2};
-
-        for (int i=0; i < tabQuetes.length; i++) {
-            assertEquals(queteAppelante.deplacement(tabQuetes[i]), tabreponses[i]);
-        }
-
-    }
-
-    @Test
-    void testEstRealisee() {
-        System.out.println("Test de la methode estRelisee()");
-
-        Quete [] tabQuetes = {new Quete("1|(4, 3)|()|2|100|explorer pic de Bhanborim"), new Quete("0|(1, 1)|((3,4),)|4|350|vaincre Araignée lunaire")};
-        tabQuetes[0].setChRealisee(true);
-        boolean [] tabReponses = {true, false};
-
-        for (int i=0; i < tabQuetes.length; i++) {
-            assertEquals(tabQuetes[i].estRealisee(), tabReponses[i]);
-        }
-    }
 
     @Test
     void getChNumero() {

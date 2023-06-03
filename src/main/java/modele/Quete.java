@@ -165,21 +165,6 @@ public class Quete {
 
 
     /**
-     * La methode deplacement() renvoi le nombre d'unite de temps que necessite
-     * le deplacement de la quete appelante à la quete en parametre.
-     *
-     * (Cette methode existe également dans la classe Position.
-     * Aisni, cette methode servira pour le niveau 2)
-     *
-     * @param parQuete
-     * @return int
-     */
-    public int deplacement(Quete parQuete) {
-        Position positionQuete = parQuete.getChPosition();
-        return abs(this.chPosition.x - positionQuete.getX()) + abs(this.chPosition.y - positionQuete.getY());
-    }
-
-    /**
      * Methode toString de la calsse Quete.
      * permet d'afficher une quête de manière très simple.
      *
