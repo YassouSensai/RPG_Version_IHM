@@ -27,14 +27,16 @@
 >  
 > Une fois que l'on clique sur le bouton simuler, les quêtes s'affichent dans l'ordre de la solution
 > (efficace ou exhaustive) dans les deux tableaux qui se trouvent à droite.  
+> 
+> *Exemple avec le scenario 0 et les coordonnées de départ suivantes : (0,0)*
 
-*Exemple avec le scenario 0 et les coordonnées de départ suivantes : (0,0)*
 ![Scenario_0.png](Images%2FScenario_0.png)
 
 >Nous pouvons également consulter les détails d'une solution en cliquant sur le bouton 
-> *"Afficher les details"*
+> *"Afficher les details"*  
+> 
+> *Exemple pour la solution efficace de l'exemple si dessus :*
 
-*Exemple pour la solution efficace de l'exemple si dessus :*
 ![Detail_Scenario_0.png](Images%2FDetail_Scenario_0.png)
 
 *Note : Notre groupe n'est allé que jusqu'au premier niveau de réalisation, c'est à dire, 
