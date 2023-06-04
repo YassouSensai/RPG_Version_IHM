@@ -1,4 +1,4 @@
-[center]# RPG_Version_IHM : *SAE Exploration Algorithmique*
+[center]# RPG_Version_IHM : *SAE Exploration Algorithmique*[/center]
 
 >### But du RPG
 >>Dans ce RPG simplifié, un joueur reçoit une liste de quêtes que l'on appelle scenario.
