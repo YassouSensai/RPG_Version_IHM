@@ -6,7 +6,7 @@
 >des préconditions ainsi qu'avoir accumulé suffisament de points d'experience.  
 >Il faut donc proposer la meilleure solution pour finir le scenario !  
 > 
->***Note : afin de consulter la/les solution(s), une IHM (Interface Homme Machine) a été réalisée.***
+>*Note : afin de consulter la/les solution(s), une IHM (Interface Homme Machine) a été réalisée.*
 
 
 ## 🛠️ Sommaire
@@ -30,3 +30,12 @@
 
 *Exemple avec le scenario 0 et les coordonnées de départ suivantes : (0,0)*
 ![Scenario_0.png](Images%2FScenario_0.png)
+
+>Nous pouvons également consulter les détails d'une solution en cliquant sur le bouton 
+> *"Afficher les details"* 
+
+*Exemple pour la solution efficace de l'exemple si dessus :*
+![Detail_Scenario_0.png](Images%2FDetail_Scenario_0.png)
+
+*Note : Notre groupe n'est allé que jusqu'au premier niveau de réalisation, c'est à dire, 
+de proposer une solution efficace et exhaustive gloutonne.*
