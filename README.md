@@ -16,7 +16,7 @@
 - **4 - Conclusion**
 - **5 - Annexe**
 
-## 1 - L'application 🧑🏻‍💻 
+## 1 -🧑🏻‍💻 L'application  
 ![Application.png](Images%2FApplication.png)
 
 >Dans l'application réalisée, une proposition de solution correspon à une simulation.
@@ -40,4 +40,17 @@
 *Note : Notre groupe n'est allé que jusqu'au premier niveau de réalisation, c'est à dire, 
 de proposer une solution efficace et exhaustive gloutonne.*  
 
-### Afin de lancer l'application, il faut éxecuter la classe ApplicationIHM du package vue.
+##### Afin de lancer l'application, il faut éxecuter la classe ApplicationIHM du package vue.
+
+# 2 - 🙇 Qualité de développement
+
+>Suite à la *SAE 2.05 - Gestion d'un projet*, l'organisation du travail entre les deux
+> membres du groupe était la suivante :  
+> 
+> Les deux membres du groupe devaient participer à la réalisation de la plus part des tâches.
+> Et voici à quoi ressemblait notre organisation :
+
+![Organisation.png](Images%2FOrganisation.png)
+
+>Malheureusement, suite à des problème que Mohamed Lamine a pu rencontrer, la totalité du travail
+> a été fait par moi (Yassine).
