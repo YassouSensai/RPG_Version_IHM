@@ -38,4 +38,6 @@
 ![Detail_Scenario_0.png](Images%2FDetail_Scenario_0.png)
 
 *Note : Notre groupe n'est allé que jusqu'au premier niveau de réalisation, c'est à dire, 
-de proposer une solution efficace et exhaustive gloutonne.*
+de proposer une solution efficace et exhaustive gloutonne.*  
+
+### Afin de lancer l'application, il faut éxecuter la classe ApplicationIHM du package vue.
