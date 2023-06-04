@@ -83,3 +83,17 @@ de proposer une solution efficace et exhaustive gloutonne.*
 > ![properties_dependance_1.png](Images%2Fproperties_dependance_1.png)
 > 
 > *Note : [En savoir plus sur le fichier pom.xml](https://chat.openai.com/share/d48ef608-722c-4d0a-b9a0-690941cf651c)*
+
+### *Méthode de développement*
+>Tout d'abord, suite au TP5 de Qualité de Développement, nous avons décidé de créer un 
+> projet pour la partie algorithmique du RPG aisni que la production de tests, puis créer un
+> projet pour la partie IHM du RPG.  
+>   
+> Ainsi, nous avons d'abord commencé par développer les classes qui nous ont permis de lire les 
+> fichiers textes et de les utiliser comme scenario. Puis nous avons commencé par créer les méthodes
+> dont nous aurions besoins (avec la doc, sans les compléter). Nous avons ensuite créé les tests de certaines méthodes
+> pour finalement compléter l'algorithme des methodes.  
+>   
+> *A prendre en compte : A cause de la precipitation, certaines méthodes ont été complétée avant d'avoir créé les tests.* 
+>   
+> Finalement, nous avons créé le projet pour l'IHM, développé l'IHM et intégré (+ compléter) les classes de test.
