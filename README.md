@@ -1,4 +1,4 @@
-# RPG_Version_IHM : *SAE Exploration Algorithmique*
+[center]# RPG_Version_IHM : *SAE Exploration Algorithmique*
 
 >### But du RPG
 >>Dans ce RPG simplifié, un joueur reçoit une liste de quêtes que l'on appelle scenario.
@@ -14,7 +14,21 @@
 - **2 - Gestion de la qualité de développement**
 - **3 - Conception génerale du projet**
 - **4 - Conclusion**
-- **5 - Annexe**
+- **5 - Annexe**[/center]
 
 ## 1 - L'application 🧑🏻‍💻 
 ![Application.png](Images%2FApplication.png)
+
+[center]
+>Dans l'application réalisée, une proposition de solution correspon à une simulation.
+> Ainsi, dans la partie qui se trouve à gauche de l'application, nous avons la possibilité
+> de "parametrer la simulation", c'est à dire ;  
+> - Choisir le scenario.
+> - Choisir les coordonées de départ.  
+>  
+> Une fois que l'on clique sur le bouton simuler, les quêtes s'affichent dans l'ordre de la solution
+> (efficace ou exhaustive) dans les deux tableaux qui se trouvent à droite.  
+
+*Exemple avec le scenario 0 et les coordonnées de départ suivantes : (0,0)*
+![Scenario_0.png](Images%2FScenario_0.png)
+[/center]
