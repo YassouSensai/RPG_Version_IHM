@@ -32,7 +32,7 @@
 ![Scenario_0.png](Images%2FScenario_0.png)
 
 >Nous pouvons également consulter les détails d'une solution en cliquant sur le bouton 
-> *"Afficher les details"* 
+> *"Afficher les details"*
 
 *Exemple pour la solution efficace de l'exemple si dessus :*
 ![Detail_Scenario_0.png](Images%2FDetail_Scenario_0.png)
