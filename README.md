@@ -113,11 +113,15 @@ des commits concernant l'algortihme de notre RPG.*
 ## 3 - 🔧 Conception Generale 
 *Note : Les différents diagrammes ont été réalisé avec la version gratuite du logiciel StarUML*
 ### *Diagramme des classes de haut niveau*
-
+![UML_projet.png](UMLs%2FUML_projet.png)
 ### *Diagramme des classes par package*
 
 #### *package modele :*
 ![UML_modele.png](UMLs%2FUML_modele.png)
 
-### *package vue :*
+#### *package vue :*
 ![UML_vue.png](UMLs%2FUML_vue.png)
+
+#### *package controleur :*
+![UML_controleur.png](UMLs%2FUML_controleur.png)
+
