@@ -61,8 +61,14 @@ de proposer une solution efficace et exhaustive gloutonne.*
 
 ![Organisation.png](Images%2FOrganisation.png)
 
->Malheureusement, suite à des problème que Mohamed Lamine a pu rencontrer, la totalité du travail
-> a été fait par moi (Yassine).
+> ***Egalement, Mohamed Lamine tient à mentionner quelque chose d'important :***
+>
+> ***Le projet n'a pas pu être réalisé selon nos souhaits initiaux, et nous n'avons pas pu utiliser tous les outils de collaboration
+> prévus pour la SAE Gestion de Projet.  
+> Mes absences ont ralenti la progression du projet, et je n'ai pas non plus disposé de toutes les compétences
+> et connaissances nécessaires.  
+> Yassine a dû consacrer beaucoup de temps à m'expliquer des choses et à relire mon travail. Ces facteurs ont contribué à la non
+> réalisation du projet dans son ensemble.***
 
 ### *Outils utilisés*
 >Pour la réalisation de ce projet, nous avons utilisé plusieurs outils qui se sont
@@ -108,15 +114,9 @@ des commits concernant l'algorithme de notre RPG.*
 > Pour être plus précis par rapport à notre méthode de développement, nous avons d'abord créé les premières classes incomplètes sur la branche main
 > de notre projet. Puis pour le niveau 1, nous avons créé une nouvelle branche à partir de la branche main. Ainsi, une fois le niveau 1 terminé
 > nous avons fusionné la branche du niveau 1 avec la branche main, puis nous avons créé une branche pour le niveau 2.  
-> 
-> ***Egalement, Mohamed Lamine tient à mentionner quelque chose d'important :*** 
-> 
-> ***Le projet n'a pas pu être réalisé selon nos souhaits initiaux, et nous n'avons pas pu utiliser tous les outils de collaboration 
-> prévus pour la SAE Gestion de Projet.  
-> Mes absences ont ralenti la progression du projet, et je n'ai pas non plus disposé de toutes les compétences 
-> et connaissances nécessaires.  
-> Yassine a dû consacrer beaucoup de temps à m'expliquer des choses et à relire mon travail. Ces facteurs ont contribué à la non
-> réalisation du projet dans son ensemble.***
+>
+> Egalement, nous tenons à mentionner qu'à cause d'un manque de reflexion, la procédure entamée au départ afin de résoudre les problèmes algorithmiques
+> nous a fait perdre énormément de temps, puisque celle-ci n'était pas cohérente avec les différents niveaux de réalisation, et elle n'était pas éfficace.
 
 
 ## 3 - 🔧 Conception Generale 
