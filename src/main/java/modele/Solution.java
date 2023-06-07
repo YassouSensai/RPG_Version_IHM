@@ -256,12 +256,12 @@ public class Solution {
         ArrayList<Quete> solution = new ArrayList<>();
 
         while (!queteFinale.estRealisee()) {
-            Quete queteARealiser = queteLaPlusProche_Efficace();
-
             if (preconditionsValidee(queteFinale))
                 solutionString = realisonLaQuete(queteFinale, solution);
-            else
+            else {
+                Quete queteARealiser = queteLaPlusProche_Efficace();
                 solutionString = realisonLaQuete(queteARealiser, solution);
+            }
         }
 
         solutionString += "\n\nRAPPORT :\n\nDuree totale = " + dureeAccumulee + "\nexperience totale = " + experienceAccumulee + "\nNombre de quetes realisees = " + solution.size()+"/"+quetesScenario.size();

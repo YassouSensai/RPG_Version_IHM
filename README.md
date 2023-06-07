@@ -19,7 +19,7 @@
 3. **Conception génerale du projet**
     - **Diagramme des classes de haut niveau**
     - **Diagramme des classes par package**
-    - **Présentation des structures de données**
+    - **Présentation des structures de données + des stratégies**
 4. **Conclusion**
 5. **Annexe**
 
@@ -71,13 +71,13 @@ de proposer une solution efficace et exhaustive gloutonne.*
 > 2. GitHub : C'est le service qui nous a permis de versionner notre projet avec Git.
 >>#### InteliJ + GitHub :
 >>L'utilisation de GitHub avec InteliJ nous a grandement simplifié la réalisation du projet. 
-> En effet, il nous a suffit de créer un dépot vide sur GitHub, puis de créer le projet sur InteliJ 
+> En effet, il nous a suffi de créer un dépot vide sur GitHub, puis de créer le projet sur InteliJ 
 > à partir du dépot GitHub.    
 > Cela nous a permis de mieux gérer les commits (Points de contrôles), les branches, les fusions, ...
 > grâce à une interface (InteliJ) qui nous a permis de versionner notre projet.  
 >   
 > 
-> 3. Junit : C'est un framework qui nous a permis de faire les tests unitaires en java pour les classe du package modèle.
+> 3. Junit : C'est un framework qui nous a permis de faire les tests unitaires en java pour les classes du package modèle.
 >>#### Intégration de Junit dans notre projet :
 >>Afin de pouvoir utiliser Junit pour réaliser nos tests unitaires, nous avons
 > ajouté les dépendances de Junit dans le fichier *pom.xml* (voir ci-dessou)  
@@ -94,20 +94,23 @@ de proposer une solution efficace et exhaustive gloutonne.*
 > projet pour la partie IHM du RPG.  
 >   
 > Ainsi, nous avons d'abord commencé par développer les classes qui nous ont permis de lire les 
-> fichiers textes et de les utiliser comme scenario. Puis nous avons commencé par créer les méthodes
+> fichiers textes et de les utiliser comme scenario. Puis, nous avons commencé par créer les méthodes
 > dont nous aurions besoins (avec la doc, sans les compléter). Nous avons ensuite créé les tests de certaines méthodes
-> pour finalement compléter l'algorithme des methodes.  
+> pour finalement compléter l'algorithme des methods.  
 >   
 > *A prendre en compte : A cause de la precipitation, certaines méthodes ont été complétée avant d'avoir créé les tests.* 
 >   
 > Finalement, nous avons créé le projet pour l'IHM, développé l'IHM et intégré (+ compléter) les classes de test.
 >   
 > *Important : Le liens vers les deux dépôts GitHub seront présents dans l'annexe puisque le premier dépôt contient la quasi-totalité
-des commits concernant l'algortihme de notre RPG.*
+des commits concernant l'algorithme de notre RPG.*
 > 
 > Pour être plus précis par rapport à notre méthode de développement, nous avons d'abord créé les premières classes incomplètes sur la branche main
 > de notre projet. Puis pour le niveau 1, nous avons créé une nouvelle branche à partir de la branche main. Ainsi, une fois le niveau 1 terminé
-> nous avons fusionné la branche du niveau 1 avec la branche main, puis nous avons créé une branche pour le niveau 2.
+> nous avons fusionné la branche du niveau 1 avec la branche main, puis nous avons créé une branche pour le niveau 2.  
+> 
+> Egalement, nous tenons à mentionner qu'à cause d'un manque de reflexion, la procédure entamée au départ afin de résoudre les problèmes algorithmiques
+> nous a fait perdre énormément de temps, puisque celle-ci n'était pas cohérente avec les différents niveaux de réalisation, et elle n'était pas éfficace.
 
 
 ## 3 - 🔧 Conception Generale 
@@ -123,5 +126,42 @@ des commits concernant l'algortihme de notre RPG.*
 ![UML_vue.png](UMLs%2FUML_vue.png)
 
 #### *package controleur :*
-![UML_controleur.png](UMLs%2FUML_controleur.png)
+![UML_controleur.png](UMLs%2FUML_controleur.png)  
 
+### *Présentation des structures de données et de nos stratégies*
+#### *Structures de données :*
+
+> Pour pouvoir proposer des solutions, il faut pouvoir stocker les suites de quêtes dans une structure de données.
+> Ainsi, compte tenu du niveau de réalisation que nous avons atteint, afin de stocker les suites de quêtes correspondant aux solutions,
+> nous avons opté pour l'utilisation des ArrayList !
+> 
+> La manipulation des ArrayList est très simple et permet de pouvoir stocker au fur et à mesure les différentes quêtes qui constituent les solutions.
+> 
+> Nous avons également choisi d'utiliser les ArrayList car cela nous simplifie l'affichage des quêtes dans notre IHM. En effet, pour afficher nos quêtes
+> nous avons choisi d'utiliser des TableView. Ainsi pour afficher nos solutions dans les deux TableView, nous avons juste à parcourir notre ArrayList et
+> ajouter les quêtes aux TableView.  
+> *(Note : Cette opération est réalisée par l'appel de la méthode miseAJour() de la classe VBoxSolution dans le contrôleur)*  
+> 
+> En plus des ArrayList, les détails des solutions (déplacements, xp, durée, ...) est stocké dans une String (champ solutionString de la classe Solution).
+> Cette String est affichée lorsque l'on clique sur le bouton *"Afficher les details"*.
+
+#### *Stratégies algorithmiques :*
+*Note : La proposition de solution se fait grâce à la classe Solution. Ainsi, toutes les méthodes qui constituent les algorithmes pour les solutions efficaces et exhaustives
+se trouvent dans cette classe.*
+
+##### *Solution Efficace :*
+
+>Afin de pouvoir proposer une solution efficace, voici notre algorithme :  
+> 1. Tant que la quête finale n'est pas réalisée :
+>     1. Si les conditions de la quête finale sont validées -> on réalise la quête finale.
+>     2. Aussi non, on réalise la quête la plus proche.
+
+##### *Solution Exhaustive :*
+
+>L'algorithme de la solution exhaustive n'est pas si différent que celui de la solution efficace. 
+> Mais ici, on cherche à réaliser toutes les quêtes et il faut que la quête finale soit la dernière.
+> Voici l'algorithme :  
+> 1. Tant que toutes les quêtes (sauf la quête finale) ne sont pas réalisée :
+>     1. On réalise la quête disponible la plus proche.
+> 2. Si les conditions de la quête finale sont validées -> on réalise la quête finale
+> 3. Aussi non, on affiche un message d'erreur.
