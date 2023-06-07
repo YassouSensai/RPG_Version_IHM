@@ -109,8 +109,14 @@ des commits concernant l'algorithme de notre RPG.*
 > de notre projet. Puis pour le niveau 1, nous avons créé une nouvelle branche à partir de la branche main. Ainsi, une fois le niveau 1 terminé
 > nous avons fusionné la branche du niveau 1 avec la branche main, puis nous avons créé une branche pour le niveau 2.  
 > 
-> Egalement, nous tenons à mentionner qu'à cause d'un manque de reflexion, la procédure entamée au départ afin de résoudre les problèmes algorithmiques
-> nous a fait perdre énormément de temps, puisque celle-ci n'était pas cohérente avec les différents niveaux de réalisation, et elle n'était pas éfficace.
+> ***Egalement, Mohamed Lamine tient à mentionner quelque chose d'important :*** 
+> 
+> ***Le projet n'a pas pu être réalisé selon nos souhaits initiaux, et nous n'avons pas pu utiliser tous les outils de collaboration 
+> prévus pour la SAE Gestion de Projet.  
+> Mes absences ont ralenti la progression du projet, et je n'ai pas non plus disposé de toutes les compétences 
+> et connaissances nécessaires.  
+> Yassine a dû consacrer beaucoup de temps à m'expliquer des choses et à relire mon travail. Ces facteurs ont contribué à la non
+> réalisation du projet dans son ensemble.***
 
 
 ## 3 - 🔧 Conception Generale 
@@ -164,4 +170,19 @@ se trouvent dans cette classe.*
 > 1. Tant que toutes les quêtes (sauf la quête finale) ne sont pas réalisée :
 >     1. On réalise la quête disponible la plus proche.
 > 2. Si les conditions de la quête finale sont validées -> on réalise la quête finale
-> 3. Aussi non, on affiche un message d'erreur.
+> 3. Aussi non, on affiche un message d'erreur.  
+
+
+## 4 - 💡 Conclusion  
+
+> ### Bilan :
+>> 
+> ### Points à amélirorer :
+>>
+
+
+## 5 - 🔗 Annexe
+
+* [Cliquez ici pour consulter le dépôt git du projet dans son entièreté](https://github.com/YassouSensai/RPG_Version_IHM.git) (dépôt final)
+* [Cliquez ici pour consulter le premier dépôt git du projet](https://github.com/YassouSensai/RPG_Version.git) (dépôt initial - à prendre en compte pour les premiers commits)
+* [Cliquez ici pour consulter le dossier de test]()
