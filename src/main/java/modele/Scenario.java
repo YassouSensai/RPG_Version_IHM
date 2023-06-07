@@ -47,7 +47,7 @@ public class Scenario {
     public Quete queteFinale() {
         Quete queteZero = null;
         for (Quete quete : listeQuetes) {
-            if (quete.chNumero == 0) {
+            if (quete.estQueteFinale()) {
                 queteZero = quete;
             }
         }

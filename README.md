@@ -1,4 +1,5 @@
 # <p align="center">RPG_Version_IHM : *SAE Exploration Algorithmique*</p>
+![Page_Acueil.png](Images%2FPage_Acueil.png)  
 
 >### But du RPG
 >>Dans ce RPG simplifié, un joueur reçoit une liste de quêtes que l'on appelle scenario.
@@ -16,6 +17,9 @@
     - **Outils utilisés**
     - **Notre méthode de développement**
 3. **Conception génerale du projet**
+    - **Diagramme des classes de haut niveau**
+    - **Diagramme des classes par package**
+    - **Présentation des structures de données**
 4. **Conclusion**
 5. **Annexe**
 
@@ -97,3 +101,23 @@ de proposer une solution efficace et exhaustive gloutonne.*
 > *A prendre en compte : A cause de la precipitation, certaines méthodes ont été complétée avant d'avoir créé les tests.* 
 >   
 > Finalement, nous avons créé le projet pour l'IHM, développé l'IHM et intégré (+ compléter) les classes de test.
+>   
+> *Important : Le liens vers les deux dépôts GitHub seront présents dans l'annexe puisque le premier dépôt contient la quasi-totalité
+des commits concernant l'algortihme de notre RPG.*
+> 
+> Pour être plus précis par rapport à notre méthode de développement, nous avons d'abord créé les premières classes incomplètes sur la branche main
+> de notre projet. Puis pour le niveau 1, nous avons créé une nouvelle branche à partir de la branche main. Ainsi, une fois le niveau 1 terminé
+> nous avons fusionné la branche du niveau 1 avec la branche main, puis nous avons créé une branche pour le niveau 2.
+
+
+## 3 - 🔧 Conception Generale 
+*Note : Les différents diagrammes ont été réalisé avec la version gratuite du logiciel StarUML*
+### *Diagramme des classes de haut niveau*
+
+### *Diagramme des classes par package*
+
+#### *package modele :*
+![UML_modele.png](UMLs%2FUML_modele.png)
+
+### *package vue :*
+![UML_vue.png](UMLs%2FUML_vue.png)

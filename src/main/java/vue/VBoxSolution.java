@@ -86,16 +86,6 @@ public class VBoxSolution extends VBox {
 
 
     /**
-     * Accesseur sur le champ labelSolution.
-     * @return Label
-     */
-    public Label getLabelSolution() {
-        return labelSolution;
-    }
-
-
-
-    /**
      * Muttateur sur le champ labelSolution.
      * @param numScenario
      */
