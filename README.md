@@ -201,6 +201,8 @@ se trouvent dans cette classe.*
 > plusieurs aspects auraient pu être modifiés et des fonctionnalités auraient pu être ajoutées afin de mettre en place plus interactions
 > entre la vue et le modèle avec l'utilisation du contrôleur.
 >
+>>Le dernier point à améliorer qui n'est pas des moindres et la réalisation du dossier de test. En effet, dans notre précipitation, nous avons oublié de réaliser le
+> dossier de test avant de réaliser les tests. Ce point nous a grandement ralentit dans la réalisation des tests du package modele.
 > ### Ce que nous avons retenus :
 >> Finalement, notre application permet de visionner les solutions dans leur ensemble, et elle permet de visionner les détails des solutions.  
 > 
@@ -215,3 +217,5 @@ se trouvent dans cette classe.*
 * [Cliquez ici pour consulter le dépôt git du projet dans son entièreté](https://github.com/YassouSensai/RPG_Version_IHM.git) (dépôt final)
 * [Cliquez ici pour consulter le premier dépôt git du projet](https://github.com/YassouSensai/RPG_Version.git) (dépôt initial - à prendre en compte pour les premiers commits)
 * [Cliquez ici pour consulter le dossier de test]()
+* voir en bas du dossier
+* 
