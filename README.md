@@ -176,9 +176,38 @@ se trouvent dans cette classe.*
 ## 4 - 💡 Conclusion  
 
 > ### Bilan :
->> 
-> ### Points à amélirorer :
->>
+>> En conclusion, nous avons réalisé une application (interface) qui permet de visionner les solutions demandées pour le RPG.
+>Derrière l'interface, se trouve :  
+> 1. L'utilisation d'un conteneur de classe HBox qui contient tous les éléments de l'application.
+> 2. L'utilisation d'un GridPane pour pouvoir parameter nos solutions.
+> 3. L'utilisation de deux TableView pour pouvoir visionner les quêtes de nos solutions.
+> 4. L'utilisation d'une autre "mini-application" pour consulter les détails des solutions.  
+>>Ainsi l'interface interragit avec l'algorithme grâce au controleur du projet. Derrière l'algorithme se trouve :  
+> 1. L'utilisation de 4 classes qui permettent de lire les fichiers textes, de manipuler les scenarios et les quêtes.
+> 2. L'utilisation d'une classe (Solution) qui contient les algorithmes pour les solutions efficaces et exhaustives.  
+>>Ainsi, pour la réalisation du projet RPJ_Version_IHM, nous avons utiliser le modèle de conception MVC (Modèle-Vue-Contrôleur).    
+> Le modèle contient toutes les classes qui constituent notre algorithme.  
+> La vue contient toutes les classes qui constituent notre application.  
+> Le controleur permet de gérer les actions utilisateurs, et donc de gérer l'affichage en conséquence.
+> 
+> [En savoir plus sur le modèle MVC](https://chat.openai.com/share/e488856e-b47e-43ca-9f4c-ba80e30ad4e8)
+> ### Tâches non réalisées & points à améliorer :
+>>Durant ce projet de groupe, quelques tâches n'ont pas été réalisées à temps. Notemment les niveaux de réalisation 2 et 3.
+> Le niveau 2 a été commencé, mais aucun des aspects du niveau n'a abouti à cause d'un manque de reflexion. En effet, nous 
+> n'avons pas pensée à utiliser les différentes méthodes algorithmiques vue dans la ressource IN2R07 (Graphes), comme les listes d'adjacences,
+> les algorithmes de parcours, ...  
+>   
+>>Egalement en rapport avec les niveaux de réalisation, notre application n'est pas à la hauteur de nos compétences. En effet,
+> plusieurs aspects auraient pu être modifiés et des fonctionnalités auraient pu être ajoutées afin de mettre en place plus interactions
+> entre la vue et le modèle avec l'utilisation du contrôleur.
+>
+> ### Ce que nous avons retenus :
+>> Finalement, notre application permet de visionner les solutions dans leur ensemble, et elle permet de visionner les détails des solutions.  
+> 
+>> Ce projet nous à permis d'améliorer et d'alimenter notre expérience en ce qui concerne la conception et la réalisation d'application.  
+> 
+>> Ce projet est un projet complet, qui explore la quasi-totalité des aspects du développement informatiques, dont ; la gestion de projet, la planification, la collaboration,
+> la conception, le développement de tests et d'algorithmes, ...
 
 
 ## 5 - 🔗 Annexe
