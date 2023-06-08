@@ -216,6 +216,4 @@ se trouvent dans cette classe.*
 
 * [Cliquez ici pour consulter le dépôt git du projet dans son entièreté](https://github.com/YassouSensai/RPG_Version_IHM.git) (dépôt final)
 * [Cliquez ici pour consulter le premier dépôt git du projet](https://github.com/YassouSensai/RPG_Version.git) (dépôt initial - à prendre en compte pour les premiers commits)
-* [Cliquez ici pour consulter le dossier de test]()
-* voir en bas du dossier
-* 
+* [Cliquez ici pour consulter le dossier de test](https://github.com/YassouSensai/RPG_Version_IHM/blob/2886031cce20dd11710afdb63985cdc610c936ea/DOSSIER_DE_TEST.pdf)
